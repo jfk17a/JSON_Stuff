@@ -24,7 +24,7 @@ class MasterViewController: UITableViewController {
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
         
-        self.title = "Veggies That Talk"
+        self.title = "Shapes List"
         
         myDataGatherer.getData(completion: {success in
             self.objects = self.myDataGatherer.dataArray
